@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Original GitHub Navigation Bar Color",
+  "version": "1.0.0",
+  "description": "Reverts the GitHub navigation bar back to it's original color.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "author": "Jack Wilsdon <jack.wilsdon@gmail.com>",
+  "content_scripts" : [{
+    "matches" : [ "*://github.com/*", "*://*.github.com/*" ],
+    "js" : [ "fix-navigation-color.js" ],
+    "run_at": "document_start"
+  }],
+  "homepage_url": "https://github.com/jackwilsdon/original-github-navigation-bar-color",
+  "permissions": [
+    "*://github.com/*",
+    "*://*.github.com/*"
+  ]
+}
