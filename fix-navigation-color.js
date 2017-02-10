@@ -1,4 +1,4 @@
-new MutationObserver(mutations => mutations
+const observer = new MutationObserver(mutations => mutations
   .filter(mutation => [ ...mutation.addedNodes ].some(node => node.tagName === 'HEAD'))
   .forEach(mutation => {
     const header = document.getElementsByClassName('header-dark');
@@ -7,5 +7,7 @@ new MutationObserver(mutations => mutations
       header[0].classList.remove('header-dark');
       observer.disconnect();
     }
-  })).observe(document.documentElement, { childList: true });
+  }));
+
+observer.observe(document.documentElement, { childList: true });
 
