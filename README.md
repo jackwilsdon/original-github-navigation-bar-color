@@ -2,7 +2,7 @@
 
 A Chrome Extension that reverts the GitHub navigation bar back to it's original color. :octocat:
 
-![GitHub with the extension installed](store/screenshot.png)
+![GitHub with the extension installed](assets/screenshot.png)
 
 ## Installing
 
