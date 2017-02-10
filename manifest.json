@@ -18,5 +18,6 @@
   "permissions": [
     "*://github.com/*",
     "*://*.github.com/*"
-  ]
+  ],
+  "short_name": "Original GitHub Navigation"
 }
