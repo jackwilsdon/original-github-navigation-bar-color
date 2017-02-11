@@ -10,8 +10,5 @@
 // @grant        none
 // ==/UserScript==
 
-const header = document.getElementsByClassName('header-dark');
-
-if (header.length) {
-  header[0].classList.remove('header-dark');
-}
+const header = document.querySelector('.header-dark');
+if (header) header.classList.remove('header-dark');
