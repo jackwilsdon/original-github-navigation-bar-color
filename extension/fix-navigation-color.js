@@ -1,13 +1,11 @@
-const observer = new MutationObserver(mutations => mutations
-  .filter(mutation => [ ...mutation.addedNodes ].some(node => node.tagName === 'HEAD'))
-  .forEach(mutation => {
-    const header = document.getElementsByClassName('header-dark');
+function setDark(dark) {
+  const header = document.getElementsByClassName('header');
 
-    if (header.length) {
-      header[0].classList.remove('header-dark');
-      observer.disconnect();
-    }
-  }));
+  if (header.length) {
+    header[0].classList[dark ? 'add' : 'remove']('header-dark');
+  }
+}
 
-observer.observe(document.documentElement, { childList: true });
-
+chrome.storage.sync.get('dark', ({ dark }) => setDark(dark));
+chrome.storage.onChanged.addListener(({ dark }) => setDark(dark.newValue));
+chrome.runtime.sendMessage('hello :)');
