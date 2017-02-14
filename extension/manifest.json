@@ -8,23 +8,15 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "browser_action": {
-    "default_icon": "icon64.png"
-  },
   "author": "Jack Wilsdon <jack.wilsdon@gmail.com>",
-  "background": {
-    "scripts": [ "background.js" ]
-  },
   "content_scripts" : [{
     "matches" : [ "*://github.com/*", "*://*.github.com/*" ],
-    "js" : [ "fix-navigation-color.js" ],
-    "run_at": "document_start"
+    "css": [ "fix-navigation-color.css" ]
   }],
   "homepage_url": "https://github.com/jackwilsdon/original-github-navigation-bar-color",
   "permissions": [
     "*://github.com/*",
-    "*://*.github.com/*",
-    "storage"
+    "*://*.github.com/*"
   ],
   "short_name": "Original GitHub Navigation"
 }
