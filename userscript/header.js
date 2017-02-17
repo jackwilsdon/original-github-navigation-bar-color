@@ -7,5 +7,5 @@
 // @match        *://github.com/*
 // @match        *://*.github.com/*
 // @run-at       document-start
-// @grant        none
+// @grant        GM_addStyle
 // ==/UserScript==
