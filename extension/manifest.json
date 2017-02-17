@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Original GitHub Navigation Bar Color",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Reverts the GitHub navigation bar back to it's original color.",
   "icons": {
     "16": "icon16.png",
