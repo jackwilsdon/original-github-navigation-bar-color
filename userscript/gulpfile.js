@@ -16,7 +16,7 @@ gulp.task('build', () => {
           prefix: header + 'GM_addStyle("',
           suffix: '");'
       }))
-      .pipe(rename('userscript.js'))
+      .pipe(rename(`OriginalGithubNavigationBarColor${version}.user.js`))
       .pipe(gulp.dest('.'))
 });
 
