@@ -1,0 +1,24 @@
+{
+  "name": "original-github-navigation-bar-color-userscript",
+  "version": "1.1.1",
+  "description": "A Userscript that reverts the GitHub navigation bar back to it's original color.",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackwilsdon/original-github-navigation-bar-color.git"
+  },
+  "author": "Jack Wilsdon <jack.wilsdon@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jackwilsdon/original-github-navigation-bar-color/issues"
+  },
+  "homepage": "https://github.com/jackwilsdon/original-github-navigation-bar-color#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-css2js": "^1.0.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2"
+  }
+}
