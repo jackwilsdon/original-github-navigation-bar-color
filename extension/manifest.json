@@ -11,7 +11,7 @@
   "author": "Jack Wilsdon <jack.wilsdon@gmail.com>",
   "content_scripts" : [{
     "matches" : [ "*://github.com/*", "*://*.github.com/*" ],
-    "css": [ "fix-navigation-color.css" ]
+    "css": [ "styles.css" ]
   }],
   "homepage_url": "https://github.com/jackwilsdon/original-github-navigation-bar-color",
   "permissions": [

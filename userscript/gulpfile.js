@@ -10,7 +10,7 @@ gulp.task('build', () => {
     .readFileSync('./header.js', 'utf8')
     .replace(/^(\/\/\s*@version\s*) .*$/m, `$1 ${version}`)
 
-  return gulp.src('../extension/fix-navigation-color.css')
+  return gulp.src('../extension/styles.css')
       .pipe(cssmin())
       .pipe(css2js({
           prefix: header + 'GM_addStyle("',
