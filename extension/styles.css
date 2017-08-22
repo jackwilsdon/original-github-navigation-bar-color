@@ -5,19 +5,19 @@
 
 .header-logo-invertocat,
 .header-logo-wordmark,
-.header-nav-link {
+.header-navlink {
     color: #555 !important;
 }
 
 
 .header-logo-invertocat:hover,
-.header-nav-link:hover,
-.header-nav-link:focus {
+.header-navlink:hover,
+.header-navlink:focus {
     color: #4078c0 !important;
 }
 
-.header-nav-link:hover .dropdown-caret,
-.header-nav-link:focus .dropdown-caret {
+.header-navlink:hover .dropdown-caret,
+.header-navlink:focus .dropdown-caret {
     border-top-color: #4078c0 !important;
 }
 
