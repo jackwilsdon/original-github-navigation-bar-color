@@ -1,23 +1,26 @@
-.header {
+.Header {
     background-color: #f5f5f5 !important;
     border-bottom: 1px solid #e5e5e5 !important;
 }
 
 .header-logo-invertocat,
-.header-logo-wordmark,
-.header-navlink {
+.notification-indicator,
+.HeaderNavlink {
     color: #555 !important;
 }
 
 
 .header-logo-invertocat:hover,
-.header-navlink:hover,
-.header-navlink:focus {
+.header-logo-invertocat:focus,
+.notification-indicator:hover,
+.notification-indicator:focus,
+.HeaderNavlink:hover,
+.HeaderNavlink:focus {
     color: #4078c0 !important;
 }
 
-.header-navlink:hover .dropdown-caret,
-.header-navlink:focus .dropdown-caret {
+.HeaderNavlink:hover .dropdown-caret,
+.HeaderNavlink:focus .dropdown-caret {
     border-top-color: #4078c0 !important;
 }
 
@@ -44,7 +47,6 @@
     background-color: #edf2f9 !important;
     border-color: #c6d7ec !important;
 }
-
 
 .header-search-input::-webkit-input-placeholder {
     color: #999 !important;
